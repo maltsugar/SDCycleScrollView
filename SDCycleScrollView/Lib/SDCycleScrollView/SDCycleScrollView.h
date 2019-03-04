@@ -202,7 +202,8 @@ typedef enum {
 // 自己添加
 /** 轮播文字label对齐方式 */
 @property (nonatomic, strong) UIColor *cellBackgroundColor;
-
+/** 背景图（占位图）的缩放模式，默认同bannerImageViewContentMode */
+@property (nonatomic, assign) UIViewContentMode backgroundHolderImageViewContentMode;
 
 
 /** 滚动手势禁用（文字轮播较实用） */
