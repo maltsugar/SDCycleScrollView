@@ -570,6 +570,11 @@ NSString * const ID = @"SDCycleScrollViewCell";
 {
     SDCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     
+    if (_cellBackgroundColor) {
+        cell.contentView.backgroundColor = _cellBackgroundColor;
+    }
+    
+    
     long itemIndex = [self pageControlIndexWithCurrentCellIndex:indexPath.item];
     
     if ([self.delegate respondsToSelector:@selector(setupCustomCell:forIndex:cycleScrollView:)] &&
