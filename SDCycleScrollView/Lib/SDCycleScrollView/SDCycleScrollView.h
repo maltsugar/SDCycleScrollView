@@ -200,7 +200,7 @@ typedef enum {
 
 
 // 自己添加
-/** 轮播文字label对齐方式 */
+/** 轮播cell的背景色 */
 @property (nonatomic, strong) UIColor *cellBackgroundColor;
 /** 背景图（占位图）的缩放模式，默认同bannerImageViewContentMode */
 @property (nonatomic, assign) UIViewContentMode backgroundHolderImageViewContentMode;
